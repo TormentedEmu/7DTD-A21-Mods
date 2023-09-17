@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+	<Name value="TE_Zombies" />
+	<DisplayName value="TE_Zombies" />
+	<Description value="Adds different zombie models for Alpha 21." />
+	<Version value="0.1" />
+	<Author value="TormentedEmu" />
+	<Website value="" />
+</xml>

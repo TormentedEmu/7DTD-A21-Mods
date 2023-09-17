@@ -1,0 +1,111 @@
+﻿<config>
+
+	<append xpath="/entity_classes">
+
+		<entity_class name="ZombieFreddy_TE" extends="zombieWightFeral">
+			
+			<property name="Tags" value="entity,zombie,walker,feral"/>
+			<property name="AvatarController" value="AvatarZombieController"/>
+			<property name="Mesh" value="#@modfolder:Resources/ZombieFreddy_TE.unity3d?ZombieFreddy_TE"/>
+			<property name="HandItem" value="meleeHandzombieMutatedFeral"/>
+			<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+			<property name="Mass" value="150"/>
+			<property name="WalkType" value="2"/>
+			<property name="MoveSpeed" value="0.095"/>
+
+			<property name="DismemberTag_L_HeadGore"
+					value="
+					Wight/Blunt/Head;
+					Wight/Blade/Head"
+		  
+					data="
+						target=Neck+scale=0,0,0+atp=true+type=blunt+detach=true+atb=true;
+						target=Neck+scale=0,0,0+atp=true+type=blade+detach=true+atb=true
+						"/>
+
+			<property name="DismemberTag_L_LeftUpperLegGore"
+					value="
+						Wight/Blunt/LeftUpperLeg;
+						Wight/Blade/LeftUpperLeg"
+		  
+					data="
+						target=LeftUpLeg+scale=0.5,0.2,0.5+atp=false+type=blunt+detach=true+rot=0,0,-180;
+						target=LeftUpLeg+scale=0.5,0.2,0.5+atp=false+type=blade+detach=true+rot=0,0,-180
+						"/>
+
+			<property name="DismemberTag_L_LeftLowerLegGore"
+					value="
+						Wight/Blunt/LeftLowerLeg;
+						Wight/Blade/LeftLowerLeg"
+		  
+					data="
+						target=LeftLeg+scale=0,0,0+atp=true+type=blunt+detach=true+rot=180,0,0;
+						target=LeftLeg+scale=0,0,0+atp=true+type=blade+detach=true+rot=180,0,0
+						"/>
+
+			<property name="DismemberTag_L_RightUpperLegGore"
+				value="
+						Wight/Blunt/RightUpperLeg;
+						Wight/Blade/RightUpperLeg"
+		  
+					data="
+						target=RightUpLeg+scale=1,0.2,1+atp=false+type=blunt+detach=true+rot=-180,0,0;
+						target=RightUpLeg+scale=1,0.2,1+atp=false+type=blade+detach=true+rot=-180,0,0
+						"/>
+
+			<property name="DismemberTag_L_RightLowerLegGore"
+				value="
+						Wight/Blunt/RightLowerLeg;
+						Wight/Blade/RightLowerLeg"
+		  
+					data="
+						target=RightLeg+scale=0,0,0+atp=true+type=blunt+detach=true+rot=0,0,-180;
+						target=RightLeg+scale=0,0,0+atp=true+type=blade+detach=true+rot=0,0,-180
+						"/>
+
+			<property name="DismemberTag_L_LeftUpperArmGore"
+				value="
+						Wight/Blunt/LeftUpperArm;
+						Wight/Blade/LeftUpperArm"
+		  
+					data="
+						target=LeftArm+scale=0,0,0+atp=true+type=blunt+detach=true+rot=0,90,-90;
+						target=LeftArm+scale=0,0,0+atp=true+type=blade+detach=true+rot=0,90,-90
+						"/>
+
+			<property name="DismemberTag_L_LeftLowerArmGore"
+				value="
+						Wight/Blunt/LeftLowerArm;
+						Wight/Blade/LeftLowerArm"
+		  
+					data="
+						target=LeftForeArm+scale=0,0,0+atp=true+type=blunt+detach=true+rot=0,90,-90;
+						target=LeftForeArm+scale=0,0,0+atp=true+type=blade+detach=true+rot=0,90,-90
+						"/>
+
+			<property name="DismemberTag_L_RightUpperArmGore"
+				value="
+					  Wight/Blunt/RightUpperArm;
+						Wight/Blade/RightUpperArm"
+		  
+					data="
+						target=RightArm+scale=0,0,0+atp=true+type=blunt+detach=true+rot=0,90,90;
+						target=RightArm+scale=0,0,0+atp=true+type=blade+detach=true+rot=0,90,90
+						"/>
+
+			<property name="DismemberTag_L_RightLowerArmGore"
+				value="
+						Wight/Blunt/RightLowerArm;
+						Wight/Blade/RightLowerArm"
+		  
+					data="
+						target=RightForeArm+scale=0,0,0+atp=true+type=blunt+detach=true+rot=0,90,90;
+						target=RightForeArm+scale=0,0,0+atp=true+type=blade+detach=true+rot=0,90,90
+						"/>
+				
+		</entity_class>
+		
+		
+	</append>
+
+</config>
