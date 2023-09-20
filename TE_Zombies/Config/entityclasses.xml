@@ -8,7 +8,7 @@
 			<property name="AvatarController" value="AvatarZombieController"/>
 			<property name="Mesh" value="#@modfolder:Resources/ZombieFreddy_TE.unity3d?ZombieFreddy_TE"/>
 			<property name="HandItem" value="meleeHandzombieMutatedFeral"/>
-			<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+			<property name="PhysicsBody" value="mixamoConvertedStandardZombieNpcCore"/>
 			<property name="Mass" value="150"/>
 			<property name="WalkType" value="2"/>
 			<property name="MoveSpeed" value="0.095"/>
