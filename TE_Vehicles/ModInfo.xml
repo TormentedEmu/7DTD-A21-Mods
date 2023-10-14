@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+	<Name value="TE_Vehicles" />
+	<DisplayName value="TE_Vehicles" />
+	<Description value="Adds deco and driveable vehicles for Alpha 21." />
+	<Version value="0.1" />
+	<Author value="TormentedEmu" />
+	<Website value="" />
+</xml>

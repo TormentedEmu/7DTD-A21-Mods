@@ -1,0 +1,32 @@
+<config>
+
+	<append xpath="/items">
+
+		<item name="ApocTruckVehicle_TEPlaceable">
+		
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+			<property name="Meshfile" value="#@modfolder:Resources/ApocTruckVehicle_TE.unity3d?ApocTruckVehicle_TE"/>
+			<property name="CustomIcon" value="ApocTruck_TE"/>
+			<property name="EconomicValue" value="100000"/>
+			<property name="TraderStageTemplate" value="vehicleTier4"/>
+			<property name="TintColor" value="255,255,255"/>
+			
+			<property class="Action1">
+				<property name="Vehicle" value="ApocTruckVehicle_TE"/>
+				<property name="VehicleSize" value="4, 4, 8"/>
+			</property>
+			
+			<effect_group name="ApocTruckVehicle_TEPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="6"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="400" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="20000"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5000"/>
+			</effect_group>
+			
+		</item>
+
+
+	</append>
+
+</config>

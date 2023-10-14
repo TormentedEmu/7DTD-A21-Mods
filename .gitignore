@@ -1,0 +1,11 @@
+.git/
+.vs/
+
+[Oo]bj/
+[Bb]in/
+
+
+*.sln
+*.user
+*.csproj
+

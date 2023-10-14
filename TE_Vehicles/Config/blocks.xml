@@ -1,0 +1,64 @@
+<config>
+
+	<append xpath="/blocks">
+
+		<block name="ApocTruckBlock_TE">
+	
+			<property name="Class" value="CarExplodeLoot"/>
+			<property name="LootList" value="cars"/>
+			
+			<property class="Explosion">
+				<property name="ParticleIndex" value="5"/>
+				<property name="RadiusBlocks" value="6"/>
+				<property name="BlockDamage" value="5000"/>
+				<property name="RadiusEntities" value="6"/>
+				<property name="EntityDamage" value="1000"/>
+			</property>
+			
+			<property name="CustomIcon" value="ApocTruckBlock_TE"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DisplayType" value="blockHardenedMulti"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#@modfolder:Resources/ApocTruckVehicle_TE.unity3d?ApocTruckBlock_TE.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="VerticalOffset" value="0"/>
+			<property name="MultiBlockDim" value="4,3,7"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="TintColor" value="255,255,255"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="PlacementDistance" value="25"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="BigDecorationRadius" value="8"/>
+			<property name="CanDecorateOnSlopes" value="false"/>
+			
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="smallEngine" count="0,1" prob=".5" tag="salvageHarvest"/>
+			<drop event="Harvest" name="carBattery" count="0,1" prob=".4" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceAcid" count="1" prob=".15" tag="WasteTreasuresAcidHarvest"/>
+			<drop event="Harvest" name="resourceRadiator" count="0,1" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="4,10" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,5" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceHeadlight" count="1,2" tag="salvageHarvest"/>
+			<drop event="Harvest" name="ammoGasCan" count="50,200" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceOil" count="0,3" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="8,22" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceSpring" count="3,6" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="5" prob="0.5" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="70,180" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceCloth" count="10,20" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			
+			<property name="ShowModelOnFall" value="true"/>
+			<property name="SortOrder1" value="B871"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_automotive"/>
+
+		</block>
+
+	</append>
+	
+</config>
