@@ -1,5 +1,12 @@
 # 7DTD-A21-Mods
 
+Forum Link:
+https://community.7daystodie.com/topic/34151-a21-emus-mods-and-modlets/
+
+Discord Link:
+https://discord.gg/DN33qqM7am
+
+
 A collection of modlets and mods for the game 7 Days to Die (alpha 21)
 
 TE_Vehicles:
