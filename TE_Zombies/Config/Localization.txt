@@ -1,0 +1,4 @@
+Key,english
+ZFreddy1_TE,"Freddy"
+ZFreddy2_TE,"Freddy"
+ZFreddy3_TE,"Freddy"

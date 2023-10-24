@@ -1,110 +1,87 @@
-<configs>
+<config>
+
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesAll']">
+
+		<entity name="ZFreddy1_TE" prob="1" />
+		<entity name="ZFreddy2_TE" prob="0.5" />
+
+	</append>
+	<!--csv xpath="/entitygroups/entitygroup[@name='ZombiesAll']/text()" delim="\n" op="add" >
+		ZFreddy1_TE, 1
+	</csv-->
 
 	
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesAll']/text()" delim="\n" op="add" >
-		ZombieFreddy_TE, 1
-	</csv>
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
+
+		<entity name="ZFreddy1_TE" prob="2" />
+		<entity name="ZFreddy2_TE" prob="1" />
+		<entity name="ZFreddy3_TE" prob="0.5" />
+
+	</append>
+	<!--csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add" >
+		ZFreddy1_TE, 2
+	</csv-->
+
 	
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add" >
-		ZombieFreddy_TE, 2
-	</csv>
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
 
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add" >
-		ZombieFreddy_TE, 2
-	</csv>
+		<entity name="ZFreddy1_TE" prob="1" />
+		<entity name="ZFreddy2_TE" prob="2" />
+		<entity name="ZFreddy3_TE" prob="0.5" />
 
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add" >
-		ZombieFreddy_TE, 3
-	</csv>
+	</append>
+	<!--csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add" >
+		ZFreddy1_TE, 2
+	</csv-->
 
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntown']/text()" delim="\n" op="add" >
-		ZombieFreddy_TE, 1
-	</csv>
 	
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntownNight']/text()" delim="\n" op="add" >
-		ZombieFreddy_TE, 3
-	</csv>
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
+
+		<entity name="ZFreddy3_TE" prob="3" />
+
+	</append>
+	<!--csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add" >
+		ZFreddy1_TE, 3
+	</csv-->
+
 	
-	<csv xpath="/entitygroups/entitygroup[@name='ZombiesDowntown']/text()" delim="\n" op="add" >
-		ZombieFreddy_TE, 2
-	</csv>
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntown']">
+
+		<entity name="ZFreddy1_TE" prob="1" />
+
+	</append>
+	<!--csv xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntown']/text()" delim="\n" op="add" >
+		ZFreddy1_TE, 1
+	</csv-->
+
 	
-	<csv xpath="/entitygroups/entitygroup[@name='ZombieScouts']/text()" delim="\n" op="add" >
-		ZombieFreddy_TE, 1
-	</csv>
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntownNight']">
+
+		<entity name="ZFreddy1_TE" prob="3" />
+
+	</append>
+	<!--csv xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntownNight']/text()" delim="\n" op="add" >
+		ZFreddy1_TE, 3
+	</csv-->
+
 	
-	<!--
-        Sleeper Volume Entity Groups
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesDowntown']">
 
-        These are used by the sleeper volume spawners, defined in gamestages.xml.
-        By convention, they are named npc[Association][Classification]GroupGS[01|50|100|200|400|800],
-        where Association is a larger category (like a faction),
-        and Classification is a smaller category within that association (like ranged vs. melee).
-		The numbers represent the maximum gamestage for that group - see gamestages.xml.
-        This should make them easier to target with XPath.
+		<entity name="ZFreddy1_TE" prob="2" />
 
-		The associations and classifications of the NPCs in these groups are not enforced by the game.
-		You can place military NPCs in the military group, even if they are in the whiteriver faction.
-		(In fact, you could even put them in the friendl animals group, though you shouldn't.)
+	</append>
+	<!--csv xpath="/entitygroups/entitygroup[@name='ZombiesDowntown']/text()" delim="\n" op="add" >
+		ZFreddy1_TE, 2
+	</csv-->
 
-		Since entity groups cannot be empty, sample NPCs are added to all groups:
-		
-		* Harley NPCs are added to the bandit, enemy, and deco trap groups.
-		
-		* Nurse and Baker NPCs are added to the whiteriver, friendly, and deco rescue groups.
-		
-		* For humanoid groups without appropriate sample NPCs, these sample NPCs are added at
-		  a very low probability, to make their chance of spawning insignificant when other NPCs
-		  are added to the entity groups.
-			* Nurses are added to the non-enemy entity groups:
-				* Military
-				* Vault
-				* Deco Trader
-			* Harleys are added to the enemy entity groups:
-				* Duke
-				* Whisperers
-				* Mech
-				* Fantasy
-			(Note: enemy and non-enemy are not fixed terms - modders can make them whatever
-			alignment they want. If they do, they should remove inappropriate sample NPCs.)
-		
-		* The NPC fox and vanilla timid animals are added to the friendly animals groups.
-		
-		* Vanilla hostile animals (live only, no zombies) are added to the enemy animals groups.
-		  
-		* Enemy animals are added to the Arachnids group, with very low probabilities.
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombieScouts']">
 
-		* Vultures (regular and radiated) are added to the Flyers group, with very low probabilities.
+		<entity name="ZFreddy2_TE" prob="1" />
 
-		The entity probabilities are gamestaged, even when they spawn at a low probability.
-
-		All probabilities have only one significant digit.
-
-		This is designed so that NPC pack creators can target those probabilities when inserting their own NPCs.
-		
-		* For Core NPCs that are in appropriate entity groups, target their probabilities, and match them.
-
-			Example: You have a bandit NPC with a weapon that is the general equivalent of a machete.
-			Match the Harley NPC armed with a machete, and spawn in with the same probability:
-			<insertAfter xpath="//entitygroup[starts-with(@name, 'npcBandit')]/entity[@name='npcHarleyMachete' and @prob="'0.1']">
-				whateverMyBanditIsNamed, 0.1 
-			</insertAfter>
-			<insertAfter xpath="//entitygroup[starts-with(@name, 'npcBandit')]/entity[@name='npcHarleyMachete' and @prob="'0.2']">
-				whateverMyBanditIsNamed, 0.2 
-			</insertAfter>
-			...etc.
-
-		* For Core NPCs that are not in appropriate entity groups, target their probabilities,
-		  but make your own NPCs 100x their probabilities.
-
-			Example: You have a Mech NPC with a weapon that is the general equivalent of a pistol.
-			Match the Harley NPC armed with a pistol, and spawn in with 100x their probability:
-			<insertAfter xpath="//entitygroup[starts-with(@name, 'npcMech')]/entity[@name='npcHarleyPistol' and @prob="'0.001']">
-				whateverMyMechIsNamed, 0.1 
-			</insertAfter>
-			<insertAfter xpath="//entitygroup[starts-with(@name, 'npcMech')]/entity[@name='npcHarleyPistol' and @prob="'0.002']">
-				whateverMyMechIsNamed, 0.2 
-			</insertAfter>
-			...etc.
-    -->
-</configs>
+	</append>
+	<!--csv xpath="/entitygroups/entitygroup[@name='ZombieScouts']/text()" delim="\n" op="add" >
+		ZFreddy1_TE, 1
+	</csv-->
+	
+</config>
