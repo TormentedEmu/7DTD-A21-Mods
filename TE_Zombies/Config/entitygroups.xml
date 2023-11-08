@@ -16,6 +16,7 @@
 		<entity name="ZFreddy1_TE" prob="2" />
 		<entity name="ZFreddy2_TE" prob="1" />
 		<entity name="ZFreddy3_TE" prob="0.5" />
+		<entity name="ZXperiment6_TE" prob="0.1" />
 
 	</append>
 	<!--csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add" >
@@ -28,6 +29,7 @@
 		<entity name="ZFreddy1_TE" prob="1" />
 		<entity name="ZFreddy2_TE" prob="2" />
 		<entity name="ZFreddy3_TE" prob="0.5" />
+		<entity name="ZXperiment6_TE" prob="0.5" />
 
 	</append>
 	<!--csv xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/text()" delim="\n" op="add" >
@@ -37,9 +39,18 @@
 	
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
 
+		<entity name="ZXperiment6_TE" prob="1" />
 		<entity name="ZFreddy3_TE" prob="3" />
 
 	</append>
+
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']">
+
+		<entity name="ZXperiment6_TE" prob="1" />
+		<entity name="ZFreddy3_TE" prob="1" />
+
+	</append>
+	
 	<!--csv xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/text()" delim="\n" op="add" >
 		ZFreddy1_TE, 3
 	</csv-->
@@ -83,5 +94,15 @@
 	<!--csv xpath="/entitygroups/entitygroup[@name='ZombieScouts']/text()" delim="\n" op="add" >
 		ZFreddy1_TE, 1
 	</csv-->
+
+
+	<append xpath="/entitygroups">
+
+		<entitygroup name="ZFreddy1_TE">ZFreddy1_TE</entitygroup>
+		<entitygroup name="ZFreddy2_TE">ZFreddy2_TE</entitygroup>
+		<entitygroup name="ZFreddy3_TE">ZFreddy3_TE</entitygroup>
+		<entitygroup name="ZXperiment6_TE">ZXperiment6_TE</entitygroup>
+
+	</append>
 	
 </config>
