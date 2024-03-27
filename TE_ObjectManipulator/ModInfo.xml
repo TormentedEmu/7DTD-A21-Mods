@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="TE_ObjectManipulator" />
+	<DisplayName value="TE_ObjectManipulator" />
+    <Description value="Adds controls to allow the modification of the player's component transform position and scale" />
+    <Version value="2" />
+    <Author value="TormentedEmu" />
+    <Website value="" />
+</xml>
