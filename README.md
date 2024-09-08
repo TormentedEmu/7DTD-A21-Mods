@@ -20,24 +20,3 @@ TE_Zombies:
 ![6](https://raw.githubusercontent.com/TormentedEmu/7DTD-A21-Mods/main/Images/Xperiment6.jpg)
 
 ![Freddy](https://raw.githubusercontent.com/TormentedEmu/7DTD-A21-Mods/main/7DaysToDie_Freddy.jpg)
-
- 
- 
- 
- 
- 
-
- 
-
- 
- 
-
-
-
-Patreon:
-
-If you like what I do and would like to buy me a coffee, please consider supporting me on Patreon!
-
-https://patreon.com/TormentedEmu
-
-I greatly appreciate you <3
